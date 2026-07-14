@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vishal Khedkar | Java Full Stack & Backend Developer Portfolio</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Professional portfolio of Vishal Tatyasaheb Khedkar, Computer Engineering student and Java Full Stack Developer specializing in Java, Spring Boot, Hibernate, MySQL, and the MERN Stack.">
+  <meta name="keywords" content="Vishal Khedkar, Vishal Tatyasaheb Khedkar, Java Developer, Backend Developer, Spring Boot, Hibernate, MERN Stack, Software Engineer, Portfolio, Computer Engineering, SPPU, Pune">
+  <meta name="author" content="Vishal Tatyasaheb Khedkar">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22 fill=%22%23818cf8%22 font-weight=%22bold%22>VK</text></svg>">
+  
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Starfield Canvas -->
+  <canvas id="starfield"></canvas>
+
+  <!-- Interactive Cursor Glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="scrollProgress"></div>
+  </div>
+
+  <!-- Loading Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-logo">
+      <span class="text-gradient">VISHAL KHEDKAR</span><span class="logo-dot"></span>
+    </div>
+    <div class="preloader-spinner-container">
+      <div class="preloader-spinner"></div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation Bar -->
+  <header id="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="#hero" class="nav-logo">
+          <span class="text-gradient">Vishal Khedkar</span><span class="logo-dot"></span>
+        </a>
+        
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        
+        <div class="nav-controls">
+          
+          <div class="nav-mobile-toggle" id="mobileMenuToggle" aria-label="Toggle Mobile Menu">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content fade-up-element animate">
+          <div class="hero-welcome">Welcome to My Portfolio</div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient">Vishal Tatyasaheb Khedkar</span>
+          </h1>
+          <div class="hero-typing">
+            a <span id="typing-text"></span><span class="typing-cursor">|</span>
+          </div>
+          <p class="hero-description">
+            A passionate Computer Engineering Final-Year Student, Java Full Stack Developer,Frontend Developer, Backend Developer and Problem Solver. I build scalable web applications, craft secure APIs, and engineer robust database solutions.
+          </p>
+          <div class="hero-cta">
+            <a href="assets/resume/Vishal_Khedkar_Resume_ATS.pdf" class="btn btn-primary" download="Vishal_Resume.pdf">
+              <i class="fa-solid fa-file-pdf"></i> Download Resume
+            </a>
+            <a href="#projects" class="btn btn-secondary">
+              <i class="fa-solid fa-laptop-code"></i> View Projects
+            </a>
+            <a href="#contact" class="btn btn-outline-glow">
+              <i class="fa-solid fa-paper-plane"></i> Contact Me
+            </a>
+          </div>
+          <div class="hero-connect">
+            <span class="connect-label">Connect with me:</span>
+            <div class="hero-socials">
+              <a href="https://linkedin.com/in/vishal-khedkar-7aa34631a" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com/Khedkar1512" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="mailto:khedkarvishal1512@gmail.com" class="social-link" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="hero-image-wrapper fade-up-element animate">
+          <div class="profile-glow-effect"></div>
+          <div class="hero-image-border">
+            <div class="hero-image-container">
+              <img src="assets/images/profile.png" alt="Vishal Tatyasaheb Khedkar Profile" class="hero-profile-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section class="about section-padding" id="about">
+    <div class="container">
+      <div class="section-header fade-up-element">
+        <!-- <span class="section-subtitle">Who I Am</span> -->
+        <h2 class="section-title">About Me</h2>
+      </div>
+      
+      <div class="about-grid">
+        <div class="about-content fade-up-element">
+          <div class="glass-card about-main-card">
+            <h3>Hello, I'am Vishal Khedkar</h3>
+            <p>
+              I am a final-year Computer Engineering  student at <strong>Trinity College of Engineering and Research, Pune</strong>, affiliated with <strong>SPPU</strong>. I possess a strong foundation in Java programming and database design, along with solid knowledge of JDBC, JSP, Servlets, Hibernate, MySQL, HTML5, CSS3, and JavaScript.
+            </p>
+            <!-- <p>
+              I thrive on building scalable, high-performance web applications, designing efficient RESTful APIs, and solving real-world structural problems. Through internships, academic projects, and hands-on coding, I continuously challenge myself to improve my code quality, learn modern design patterns, and adopt best software engineering practices.
+            </p> -->
+            <p>
+              <strong>My Career Objective:</strong> To secure a challenging position as a <strong>Java Full Stack Developer</strong> in a progressive organization where I can leverage my backend expertise, database integration skills, and problem-solving abilities to build innovative and impactful software solutions.
+            </p>
+            
+            <!-- <div class="about-details-list">
+              <div class="detail-item">
+                <span class="detail-label"><i class="fa-solid fa-user-graduate"></i> College:</span>
+                <span class="detail-value">Trinity College of Engineering and Research, Pune</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label"><i class="fa-solid fa-university"></i> Affiliation:</span>
+                <span class="detail-value">Savitribai Phule Pune University (SPPU)</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label"><i class="fa-solid fa-envelope"></i> Email:</span>
+                <span class="detail-value"><a href="mailto:khedkarvishal1512@gmail.com">khedkarvishal1512@gmail.com</a></span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label"><i class="fa-solid fa-map-location-dot"></i> Location:</span>
+                <span class="detail-value">Pune, Maharashtra, India</span>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        
+        <div class="about-stats fade-up-element">
+          <div class="about-stats-grid">
+            <div class="stat-card glass-card">
+              <div class="stat-icon"><i class="fa-solid fa-code"></i></div>
+              <div class="stat-num" data-val="10">0</div>
+              <div class="stat-title">Projects Completed</div>
+            </div>
+            
+            <div class="stat-card glass-card">
+              <div class="stat-icon"><i class="fa-solid fa-briefcase"></i></div>
+              <div class="stat-num" data-val="1" data-label=" Month">0</div>
+              <div class="stat-title">Internship Experience</div>
+            </div>
+            
+            <div class="stat-card glass-card">
+              <div class="stat-icon"><i class="fa-solid fa-award"></i></div>
+              <div class="stat-num" data-val="4">0</div>
+              <div class="stat-title">Certifications Earned</div>
+            </div>
+            
+            <div class="stat-card glass-card">
+              <div class="stat-icon"><i class="fa-solid fa-chart-line"></i></div>
+              <div class="stat-num" data-val="7.10" data-decimal="true">0.0</div>
+              <div class="stat-title">Academic CGPA</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience Section -->
+  <section class="experience section-padding" id="experience">
+    <div class="container">
+      <div class="section-header fade-up-element">
+        <span class="section-subtitle">My Industry Exposure</span>
+        <h2 class="section-title">Work Experience</h2>
+      </div>
+      
+      <div class="timeline-container">
+        <div class="vertical-timeline-line"></div>
+        
+        <!-- Experience 1 -->
+        <div class="timeline-item-wrapper fade-up-element left-aligned">
+          <div class="timeline-dot-glow"></div>
+          <div class="timeline-content-card glass-card">
+            <div class="timeline-card-header">
+              <span class="timeline-badge">Internship</span>
+              <span class="timeline-date"><i class="fa-regular fa-calendar-days"></i> Feb 2025 - Mar 2025</span>
+            </div>
+            <h3 class="timeline-card-title">MERN Stack Intern</h3>
+            <h4 class="timeline-card-company"><i class="fa-solid fa-building"></i> EY GDS (Ernst & Young Global Delivery Services)</h4>
+            
+            <p class="timeline-card-desc">
+              Gained practical industry exposure in building modern, full-stack web applications. Actively engaged in designing, developing, and deploying web products under standard software development lifecycles.
+            </p>
+            <ul class="timeline-bullets">
+              <li><i class="fa-solid fa-check"></i> Developed responsive, high-performance web applications using MongoDB, Express.js, React.js, and Node.js (MERN Stack).</li>
+              <li><i class="fa-solid fa-check"></i> Crafted clean and reusable React UI components, promoting modularity and consistency in interface design.</li>
+              <li><i class="fa-solid fa-check"></i> Engineered robust RESTful APIs to facilitate seamless data communication between the frontend and database.</li>
+              <li><i class="fa-solid fa-check"></i> Collaborated with cross-functional team members in an Agile environment, participating in daily standups and sprint planning.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills and Technologies Section -->
+  <section class="skills section-padding" id="skills">
+    <div class="container">
+      <div class="section-header fade-up-element">
+        <span class="section-subtitle">What I Know</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+      </div>
+      
+      <div class="skills-grid">
+        
+        <!-- Category 1: Programming Languages -->
+        <div class="skill-category-card glass-card fade-up-element">
+          <div class="skill-category-header">
+            <i class="fa-solid fa-code"></i>
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span><i class="fa-brands fa-java" style="color: #e76f51;"></i> Java (Core & Advanced)</span>
+                <span class="skill-val">90%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-percent="90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span><i class="fa-brands fa-js" style="color: #f7df1e;"></i> JavaScript </span>
+                <span class="skill-val">80%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-percent="80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Category 2: Frontend Technologies -->
+        <div class="skill-category-card glass-card fade-up-element">
+          <div class="skill-category-header">
+            <i class="fa-solid fa-display"></i>
+            <h3>Frontend Technologies</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span><i class="fa-brands fa-html5" style="color: #e34c26;"></i> HTML5</span>
+                <span class="skill-val">90%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-percent="90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span><i class="fa-brands fa-css3-alt" style="color: #264de4;"></i> CSS3 & Responsive UI</span>
+                <span class="skill-val">85%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-percent="85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span><i class="fa-brands fa-css3-alt" style="color: #264de4;"></i> Bootstrap</span>
+                <span class="skill-val">80%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-percent="85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3: Backend Technologies -->
+        <div class="skill-category-card glass-card fade-up-element">
+          <div class="skill-category-header">
+            <i class="fa-solid fa-server"></i>
+            <h3>Backend Technologies</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span><i class="fa-solid fa-leaf" style="color: #6db33f;"></i> Spring Boot & Spring MVC</span>
+                <span class="skill-val">85%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-percent="85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span><i class="fa-solid fa-cubes" style="color: #b07219;"></i> Hibernate & JDBC</span>
+                <span class="skill-val">80%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-percent="80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span><i class="fa-solid fa-gears" style="color: #4b6584;"></i> JSP & Servlets</span>
+                <span class="skill-val">80%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-percent="80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 4: Database -->
+        <div class="skill-category-card glass-card fade-up-element">
+          <div class="skill-category-header">
+            <i class="fa-solid fa-database"></i>
+            <h3>Database Systems</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span><i class="fa-solid fa-table" style="color: #00758f;"></i> MySQL & Relational DB</span>
+                <span class="skill-val">85%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-percent="85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span><i class="fa-solid fa-leaf" style="color: #4db33d;"></i> MongoDB (MERN Integration)</span>
+                <span class="skill-val">65%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-percent="65%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 5: Version Control -->
+        <div class="skill-category-card glass-card fade-up-element">
+          <div class="skill-category-header">
+            <i class="fa-solid fa-code-branch"></i>
+            <h3>Version Control</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span><i class="fa-brands fa-git-alt" style="color: #f1502f;"></i> Git Code Management</span>
+                <span class="skill-val">85%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-percent="85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span><i class="fa-brands fa-github" style="color: #f0f6fc;"></i> GitHub Repositories</span>
+                <span class="skill-val">85%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-percent="85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 6: Development Tools -->
+        <div class="skill-category-card glass-card fade-up-element">
+          <div class="skill-category-header">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h3>Development Tools</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span><i class="fa-solid fa-laptop-code" style="color: #007acc;"></i> VS Code IDE</span>
+                <span class="skill-val">90%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-percent="90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span><i class="fa-solid fa-cube" style="color: #c71a36;"></i> Eclipse & Postman</span>
+                <span class="skill-val">80%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-percent="80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 7: Soft Skills -->
+        <div class="skill-category-card glass-card fade-up-element">
+          <div class="skill-category-header">
+            <i class="fa-solid fa-users"></i>
+            <h3>Professional Soft Skills</h3>
+          </div>
+          <div class="skills-list flex-skills">
+            <span class="soft-badge"><i class="fa-solid fa-brain"></i> Problem Solving</span>
+            <span class="soft-badge"><i class="fa-solid fa-comments"></i> Communication</span>
+            <span class="soft-badge"><i class="fa-solid fa-people-group"></i> Teamwork</span>
+            <span class="soft-badge"><i class="fa-solid fa-crown"></i> Leadership</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects section-padding" id="projects">
+    <div class="container">
+      <div class="section-header fade-up-element">
+        <span class="section-subtitle">My Creative Work</span>
+        <h2 class="section-title">Projects Showcase</h2>
+      </div>
+      
+      <!-- Category Filter Tabs -->
+      <div class="projects-filter-bar fade-up-element">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="java-fullstack">Java Full Stack</button>
+        <button class="filter-btn" data-filter="spring-boot">Spring Boot</button>
+        <button class="filter-btn" data-filter="react">React JS</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+      </div>
+      
+      <div class="projects-grid">
+        
+        <!-- Project 1: MHT-CET College Predictor System -->
+        <div class="project-card glass-card fade-up-element" data-category="java-fullstack">
+          <div class="project-img-wrapper">
+            <img src="assets/images/project-student.png" alt="MHT-CET College Predictor System" class="project-img" loading="lazy">
+            <div class="project-img-overlay">
+              <a href="https://github.com/Khedkar1512" target="_blank" rel="noopener noreferrer" class="project-overlay-link" aria-label="GitHub Repository">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="#" class="project-overlay-link" aria-label="Live Demo">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Java SE</span>
+              <span class="project-tag">JSP & Servlets</span>
+              <span class="project-tag">Hibernate</span>
+              <span class="project-tag">MySQL</span>
+            </div>
+            <h3 class="project-title">MHT-CET College Predictor</h3>
+            <p class="project-desc">
+              A robust web application designed to predict potential engineering colleges for students based on their MHT-CET exam percentiles and historical college cutoff database records.
+            </p>
+            <div class="project-features-list">
+              <span><i class="fa-solid fa-circle-check"></i> Built with Model-View-Controller (MVC) architecture</span>
+              <span><i class="fa-solid fa-circle-check"></i> Tailored database schema & optimized SQL query logic</span>
+              <span><i class="fa-solid fa-circle-check"></i> Responsive UI built with HTML5, CSS3, & vanilla JS</span>
+              <span><i class="fa-solid fa-circle-check"></i> Seamless database integration utilizing Hibernate ORM</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Khedkar1512" target="_blank" rel="noopener noreferrer" class="project-btn main-btn">
+                <i class="fa-brands fa-github"></i> GitHub Code
+              </a>
+              <a href="#" class="project-btn secondary-btn">
+                <i class="fa-solid fa-globe"></i> Live Preview
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 2: Personal Finance Manager -->
+        <div class="project-card glass-card fade-up-element" data-category="react">
+          <div class="project-img-wrapper">
+            <img src="assets/images/project-paper-gen.png" alt="Personal Finance Manager Dashboard" class="project-img" loading="lazy">
+            <div class="project-img-overlay">
+              <a href="https://github.com/Khedkar1512" target="_blank" rel="noopener noreferrer" class="project-overlay-link" aria-label="GitHub Repository">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="#" class="project-overlay-link" aria-label="Live Demo">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">MongoDB</span>
+              <span class="project-tag">Express.js</span>
+              <span class="project-tag">React.js</span>
+              <span class="project-tag">Node.js</span>
+            </div>
+            <h3 class="project-title">Personal Finance Manager</h3>
+            <p class="project-desc">
+              A comprehensive financial tracking solution designed to help users log incomes, monitor expense transactions, budget effectively, and visualize spending statistics in real-time.
+            </p>
+            <div class="project-features-list">
+              <span><i class="fa-solid fa-circle-check"></i> Fully secured RESTful APIs with input validation rules</span>
+              <span><i class="fa-solid fa-circle-check"></i> Transaction categorization & database persistence</span>
+              <span><i class="fa-solid fa-circle-check"></i> Interactive financial analytics with chart elements</span>
+              <span><i class="fa-solid fa-circle-check"></i> Dynamic state management with responsive layouts</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Khedkar1512" target="_blank" rel="noopener noreferrer" class="project-btn main-btn">
+                <i class="fa-brands fa-github"></i> GitHub Code
+              </a>
+              <a href="#" class="project-btn secondary-btn">
+                <i class="fa-solid fa-globe"></i> Live Preview
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Employee Management System -->
+        <div class="project-card glass-card fade-up-element" data-category="java-fullstack">
+          <div class="project-img-wrapper">
+            <img src="assets/images/project-employee.png" alt="Employee Management System" class="project-img" loading="lazy">
+            <div class="project-img-overlay">
+              <a href="https://github.com/Khedkar1512" target="_blank" rel="noopener noreferrer" class="project-overlay-link" aria-label="GitHub Repository">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="#" class="project-overlay-link" aria-label="Live Demo">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Java MVC</span>
+              <span class="project-tag">JSP / Servlet</span>
+              <span class="project-tag">MySQL</span>
+              <span class="project-tag">JDBC</span>
+            </div>
+            <h3 class="project-title">Employee Directory System</h3>
+            <p class="project-desc">
+              An enterprise operations utility managing personnel listings, shift schedules, department hierarchy, and salary reporting, complete with session authentication.
+            </p>
+            <div class="project-features-list">
+              <span><i class="fa-solid fa-circle-check"></i> JSP-based dashboard views & dynamic form logic</span>
+              <span><i class="fa-solid fa-circle-check"></i> Servlet routing with session validation handlers</span>
+              <span><i class="fa-solid fa-circle-check"></i> JDBC CRUD mappings connecting database records</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Khedkar1512" target="_blank" rel="noopener noreferrer" class="project-btn main-btn">
+                <i class="fa-brands fa-github"></i> GitHub Code
+              </a>
+              <a href="#" class="project-btn secondary-btn">
+                <i class="fa-solid fa-globe"></i> Live Preview
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: E-Commerce Microservices -->
+        <div class="project-card glass-card fade-up-element" data-category="spring-boot">
+          <div class="project-img-wrapper">
+            <img src="assets/images/project-employee.png" alt="E-Commerce Microservices Backend" class="project-img" loading="lazy">
+            <div class="project-img-overlay">
+              <a href="https://github.com/Khedkar1512" target="_blank" rel="noopener noreferrer" class="project-overlay-link" aria-label="GitHub Repository">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="#" class="project-overlay-link" aria-label="Live Demo">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Spring Boot</span>
+              <span class="project-tag">Spring Cloud</span>
+              <span class="project-tag">PostgreSQL</span>
+              <span class="project-tag">Docker</span>
+            </div>
+            <h3 class="project-title">E-Commerce Backend</h3>
+            <p class="project-desc">
+              A high-performance backend platform structured on decentralized microservices, handling order validation, catalog registries, and authentication flows.
+            </p>
+            <div class="project-features-list">
+              <span><i class="fa-solid fa-circle-check"></i> Eureka discovery registry & API Gateway route mappings</span>
+              <span><i class="fa-solid fa-circle-check"></i> Decoupled data stores using Dockerized PostgreSQL</span>
+              <span><i class="fa-solid fa-circle-check"></i> Standard spring cloud config for environment variables</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Khedkar1512" target="_blank" rel="noopener noreferrer" class="project-btn main-btn">
+                <i class="fa-brands fa-github"></i> GitHub Code
+              </a>
+              <a href="#" class="project-btn secondary-btn">
+                <i class="fa-solid fa-globe"></i> Live Preview
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Weather Dashboard App -->
+        <div class="project-card glass-card fade-up-element" data-category="react">
+          <div class="project-img-wrapper">
+            <img src="assets/images/project-paper-gen.png" alt="Weather Dashboard App" class="project-img" loading="lazy">
+            <div class="project-img-overlay">
+              <a href="https://github.com/Khedkar1512" target="_blank" rel="noopener noreferrer" class="project-overlay-link" aria-label="GitHub Repository">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="#" class="project-overlay-link" aria-label="Live Demo">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">React JS</span>
+              <span class="project-tag">OpenWeather API</span>
+              <span class="project-tag">Chart.js</span>
+              <span class="project-tag">Tailwind CSS</span>
+            </div>
+            <h3 class="project-title">Weather Analytics Dashboard</h3>
+            <p class="project-desc">
+              An interactive visual environment displaying real-time metrics, historical charts, wind directions, and location-based historical search items.
+            </p>
+            <div class="project-features-list">
+              <span><i class="fa-solid fa-circle-check"></i> OpenWeather API integrations with responsive state mappings</span>
+              <span><i class="fa-solid fa-circle-check"></i> Real-time weather trends graphs visualized via Chart.js</span>
+              <span><i class="fa-solid fa-circle-check"></i> persist search histories locally inside the browser</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Khedkar1512" target="_blank" rel="noopener noreferrer" class="project-btn main-btn">
+                <i class="fa-brands fa-github"></i> GitHub Code
+              </a>
+              <a href="#" class="project-btn secondary-btn">
+                <i class="fa-solid fa-globe"></i> Live Preview
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Premium Developer Portfolio -->
+        <div class="project-card glass-card fade-up-element" data-category="frontend">
+          <div class="project-img-wrapper">
+            <img src="assets/images/project-student.png" alt="Premium Developer Portfolio Website" class="project-img" loading="lazy">
+            <div class="project-img-overlay">
+              <a href="https://github.com/Khedkar1512" target="_blank" rel="noopener noreferrer" class="project-overlay-link" aria-label="GitHub Repository">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="#" class="project-overlay-link" aria-label="Live Demo">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">HTML5</span>
+              <span class="project-tag">CSS3</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">Glassmorphism</span>
+            </div>
+            <h3 class="project-title">Developer Showcase Portfolio</h3>
+            <p class="project-desc">
+              A premium, dark-themed responsive website featuring beautiful gradients, vertical timeline grids, custom observers, and glowing cursor effects.
+            </p>
+            <div class="project-features-list">
+              <span><i class="fa-solid fa-circle-check"></i> Pure CSS layout styling with glassmorphism controls</span>
+              <span><i class="fa-solid fa-circle-check"></i> Client-side form validation and cursor-following glow</span>
+              <span><i class="fa-solid fa-circle-check"></i> SEO metadata configurations and high-performance loading</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Khedkar1512" target="_blank" rel="noopener noreferrer" class="project-btn main-btn">
+                <i class="fa-brands fa-github"></i> GitHub Code
+              </a>
+              <a href="#" class="project-btn secondary-btn">
+                <i class="fa-solid fa-globe"></i> Live Preview
+              </a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="education section-padding" id="education">
+    <div class="container">
+      <div class="section-header fade-up-element">
+        <span class="section-subtitle">Academic Timeline</span>
+        <h2 class="section-title">Education History</h2>
+      </div>
+      
+      <div class="timeline-container">
+        <div class="vertical-timeline-line"></div>
+        
+        <!-- Education 1 -->
+        <div class="timeline-item-wrapper fade-up-element right-aligned">
+          <div class="timeline-dot-glow"></div>
+          <div class="timeline-content-card glass-card">
+            <div class="timeline-card-header">
+              <span class="timeline-badge education-badge">B.E. Degree</span>
+              <span class="timeline-date"><i class="fa-regular fa-calendar-days"></i>2022 - 2026 </span>
+            </div>
+            <h3 class="timeline-card-title">Bachelor of Engineering in Computer Engineering</h3>
+            <h4 class="timeline-card-company"><i class="fa-solid fa-graduation-cap"></i> Trinity College of Engineering and Research, Pune</h4>
+            <p class="timeline-card-desc">
+               Focusing on core paradigms including Software Development, Data Structures &amp; Algorithms, OOPs, Database
+              Management Systems, and Web Engineering.
+            </p>
+            <div class="timeline-score-badge">
+              <span>CGPA: <strong>7.10 / 10</strong></span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Education 2 -->
+        <div class="timeline-item-wrapper fade-up-element left-aligned">
+          <div class="timeline-dot-glow"></div>
+          <div class="timeline-content-card glass-card">
+            <div class="timeline-card-header">
+              <span class="timeline-badge education-badge">HSC Board</span>
+              <span class="timeline-date"><i class="fa-regular fa-calendar-days"></i>2021 - 2022</span>
+            </div>
+            <h3 class="timeline-card-title">Higher Secondary Certificate</h3>
+            <h4 class="timeline-card-company"><i class="fa-solid fa-school"></i> Mahatma Gandhi Junior College Karjat</h4>
+            <p class="timeline-card-desc">
+              Focused on Science streams, specializing in Physics, Chemistry and Mathematics.
+            </p>
+            <div class="timeline-score-badge">
+              <span>Aggregate: <strong>62.17%</strong></span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Education 3 -->
+        <div class="timeline-item-wrapper fade-up-element right-aligned">
+          <div class="timeline-dot-glow"></div>
+          <div class="timeline-content-card glass-card">
+            <div class="timeline-card-header">
+              <span class="timeline-badge education-badge">SSC Board</span>
+              <span class="timeline-date"><i class="fa-regular fa-calendar-days"></i>2019-2020</span>
+            </div>
+            <h3 class="timeline-card-title">Secondary School Certificate </h3>
+            <h4 class="timeline-card-company"><i class="fa-solid fa-school"></i> Mahatma Gandhi Vidyalaya Karjat</h4>
+            <p class="timeline-card-desc">
+              Completed general secondary schooling curriculum with high merit across academic courses.
+            </p>
+            <div class="timeline-score-badge">
+              <span>Aggregate: <strong>85.60%</strong></span>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements and Certifications Section -->
+  <!-- Achievements & Certifications -->
+  <section class="achievements section-padding" id="achievements">
+    <div class="container">
+  
+      <div class="section-header fade-up-element">
+        <span class="section-subtitle">Credentials & Recognitions</span>
+        <h2 class="section-title">Achievements & Certifications</h2>
+      </div>
+  
+      <div class="achievements-grid">
+  
+        <!-- Card 1 -->
+        <div class="achievement-card glass-card fade-up-element">
+          <div class="achievement-icon-box">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+  
+          <h3 class="achievement-title">Programming in Java</h3>
+  
+          <p class="achievement-issuer">
+            NPTEL Elite Certification
+          </p>
+  
+          <div class="achievement-meta-details">
+            <span><i class="fa-solid fa-circle-check"></i> Java fundamentals, OOP & Exception Handling</span>
+            <span><i class="fa-solid fa-circle-check"></i> Collections Framework & Multithreading</span>
+            <span><i class="fa-solid fa-circle-check"></i> Industry-oriented Java programming concepts</span>
+          </div>
+  
+          <div class="certificate-image">
+            <a href="assets/images/page_1.png" target="_blank">
+              <img src="assets/images/page_1.png" alt="Programming in Java NPTEL Certificate">
+            </a>
+          </div>
+        </div>
+  
+        <!-- Card 2 -->
+        <div class="achievement-card glass-card fade-up-element">
+          <div class="achievement-icon-box">
+            <i class="fa-solid fa-building-circle-check"></i>
+          </div>
+  
+          <h3 class="achievement-title">
+            EY GDS AICTE MERN Internship
+          </h3>
+  
+          <p class="achievement-issuer">
+            EY GDS & AICTE Program
+          </p>
+  
+          <div class="achievement-meta-details">
+            <span><i class="fa-solid fa-circle-check"></i> Built responsive applications using MongoDB, Express.js, React
+              & Node.js</span>
+            <span><i class="fa-solid fa-circle-check"></i> Developed REST APIs and reusable React components</span>
+            <span><i class="fa-solid fa-circle-check"></i> Worked in Agile development environment</span>
+          </div>
+  
+          <div class="certificate-image">
+            <a href="assets/images/EY-GDS.jpeg" target="_blank">
+              <img src="assets/images/EY-GDS.jpeg" alt="EY GDS AICTE MERN Internship Certificate">
+            </a>
+          </div>
+        </div>
+  
+        <!-- Card 3 -->
+        <div class="achievement-card glass-card fade-up-element">
+          <div class="achievement-icon-box">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+  
+          <h3 class="achievement-title">
+            Java Full Stack Development with AI
+          </h3>
+  
+          <p class="achievement-issuer">
+            Envision Computer Training Institute Pvt. Ltd.
+          </p>
+  
+          <div class="achievement-meta-details">
+            <span><i class="fa-solid fa-circle-check"></i> Core Java, Advanced Java & Spring Boot</span>
+            <span><i class="fa-solid fa-circle-check"></i> HTML, CSS, JavaScript, MySQL & Full Stack Development</span>
+            <span><i class="fa-solid fa-circle-check"></i> AI-powered development concepts and real-world projects</span>
+          </div>
+  
+          <div class="certificate-image">
+            <a href="assets/images/page_3.jpg" target="_blank">
+              <img src="assets/images/page_3.jpg" alt="Java Full Stack Development with AI Certificate">
+            </a>
+          </div>
+        </div>
+  
+        <!-- Card 4 -->
+        <div class="achievement-card glass-card fade-up-element placeholder-card">
+          <div class="achievement-icon-box">
+            <i class="fa-solid fa-circle-plus"></i>
+          </div>
+  
+          <h3 class="achievement-title">
+            More Certifications Coming Soon
+          </h3>
+  
+          <p class="achievement-issuer">
+            Continuous Learning
+          </p>
+  
+          <div class="achievement-meta-details">
+            <span><i class="fa-solid fa-circle-check"></i> Practicing Advanced Data Structures & Algorithms</span>
+            <span><i class="fa-solid fa-circle-check"></i> Learning Spring Boot Microservices & REST APIs</span>
+            <span><i class="fa-solid fa-circle-check"></i> Exploring Cloud Computing, Docker & DevOps</span>
+          </div>
+  
+          <div class="certificate-image placeholder-image">
+            <i class="fa-solid fa-spinner fa-spin"></i>
+            <p>Learning in Progress</p>
+          </div>
+        </div>
+  
+      </div>
+  
+    </div>
+  </section>
+        
+
+  <!-- Contact Section -->
+  <section class="contact section-padding" id="contact">
+    <div class="container">
+      <div class="section-header fade-up-element">
+        <span class="section-subtitle">Get in Touch</span>
+        <h2 class="section-title">Contact Details</h2>
+      </div>
+      
+      <div class="contact-grid">
+        <div class="contact-info fade-up-element">
+          
+          <!-- Contact Detail Card 1 -->
+          <div class="contact-info-card glass-card">
+            <div class="contact-icon-box">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-info-text">
+              <h4>Email Address</h4>
+              <p><a href="mailto:khedkarvishal1512@gmail.com">khedkarvishal1512@gmail.com</a></p>
+            </div>
+          </div>
+          
+          <!-- Contact Detail Card 2 -->
+          <div class="contact-info-card glass-card">
+            <div class="contact-icon-box">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="contact-info-text">
+              <h4>Contact Number</h4>
+              <p><a href="tel:+917020158796">+91 7020158796</a></p>
+            </div>
+          </div>
+          
+          <!-- Contact Detail Card 3 -->
+          <div class="contact-info-card glass-card">
+            <div class="contact-icon-box">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="contact-info-text">
+              <h4>Current Location</h4>
+              <p>Pune, Maharashtra, India</p>
+            </div>
+          </div>
+          
+          <!-- Google Maps Iframe -->
+          <div class="contact-map-card glass-card">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121059.04360341774!2d73.78980327318712!3d18.524616428751515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c118b95d78e3%3A0xd56d987d6cd8d26!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1688639598284!5m2!1sen!2sin" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Vishal's Location Map">
+            </iframe>
+          </div>
+          
+        </div>
+        <!-- Contact Form Card -->
+        <div class="contact-form-card glass-card fade-up-element">
+        
+          <div class="form-success-banner" id="formSuccess" style="display:none;"></div>
+        
+          <form class="contact-form" id="contactForm" novalidate>
+        
+            <!-- Name -->
+            <div class="form-group">
+              <input type="text" class="form-input" id="formName" name="from_name" placeholder=" " required>
+              <label for="formName" class="form-label">
+                Full Name
+              </label>
+              <span class="form-error-msg">
+                Please enter your full name (minimum 3 characters).
+              </span>
+            </div>
+        
+            <!-- Email -->
+            <div class="form-group">
+              <input type="email" class="form-input" id="formEmail" name="from_email" placeholder=" " required>
+              <label for="formEmail" class="form-label">
+                Email Address
+              </label>
+              <span class="form-error-msg">
+                Please enter a valid email address.
+              </span>
+            </div>
+        
+            <!-- Subject -->
+            <div class="form-group">
+              <input type="text" class="form-input" id="formSubject" name="subject" placeholder=" " required>
+              <label for="formSubject" class="form-label">
+                Subject
+              </label>
+              <span class="form-error-msg">
+                Please enter a subject (minimum 4 characters).
+              </span>
+            </div>
+        
+            <!-- Message -->
+            <div class="form-group">
+              <textarea class="form-input" id="formMessage" name="message" rows="6" placeholder=" " required></textarea>
+        
+              <label for="formMessage" class="form-label">
+                Message
+              </label>
+        
+              <span class="form-error-msg">
+                Please enter your message (minimum 10 characters).
+              </span>
+            </div>
+        
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary submit-glow" style="width:100%;">
+        
+              <i class="fa-solid fa-paper-plane"></i>
+              Send Message
+        
+            </button>
+        
+          </form>
+        
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Elegant Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-brand">
+          <h3 class="footer-brand-title">
+            <span class="text-gradient">VISHAL</span><span class="logo-dot"></span>
+          </h3>
+          <p class="footer-desc">
+            Computer Engineering Undergraduate (2026 Batch) focused on Java, Spring Boot microservices, database optimizations, and full-stack software development.
+          </p>
+        </div>
+        
+        <div class="footer-links-col">
+          <h4 class="footer-links-title">Sections</h4>
+          <ul class="footer-links-list">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links-col">
+          <h4 class="footer-links-title">Resources</h4>
+          <ul class="footer-links-list">
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="assets/resume/Vishal_Resume.pdf" download="Vishal_Resume.pdf">Download PDF Resume</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          &copy; 2026 Vishal Tatyasaheb Khedkar. All rights reserved.
+        </div>
+        <div class="footer-credit">
+          Made with ❤️ by Me.
+        </div>
+        <div class="footer-socials">
+          <a href="https://linkedin.com/in/vishal-khedkar-7aa34631a" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/Khedkar1512" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="mailto:khedkarvishal1512@gmail.com" class="footer-social-link" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-Top Button -->
+  <button class="scroll-to-top" id="scrollTopBtn" aria-label="Scroll back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Modular JavaScript File -->
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  
+  <script>
+    emailjs.init("lpqMq7gVLUtTAjx3G");
+  </script>
+  
+  <script src="js/script.js"></script>
+</body>
+</html>
